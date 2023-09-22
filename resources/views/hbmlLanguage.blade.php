@@ -16,8 +16,8 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Taviraj:wght@500;600&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Taviraj:wght@500;600&display=swap" rel="stylesheet">
     {{-- CSS Style --}}
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 
@@ -61,20 +61,16 @@
     <main>
         <div class="container">
 
-            <div class="row row-cols-3 g-5">
-                @foreach ($arguments as $singleArg)
-                    <div class="col">
-                        <div class="card box-shadow">
-                            <img src={{ $singleArg['img'] }} class="card-img-top" alt="...">
-                            <div class="card-body d-flex flex-column justify-content-between">
-                                <h3 class="card-title text-center">{{ $singleArg['name'] }}</h3>
-                                <p class="card-text"> {{ $singleArg['description'] }} </p>
-                                <a href={{ $singleArg['id'] }}
-                                    class="btn btn-outline-dark w-50 mx-auto py-2 my-3">Dettagli</a>
-                            </div>
-                        </div>
+            <div class="row row-cols-3 g-3 justify-content-center">
+                <div class="card box-shadow">
+                    <img src={{ $htmlBear['img'] }} class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-title">{{ $htmlBear['name'] }}</h4>
+                        <p class="card-text"> {{ $htmlBear['description'] }} </p>
+                        <a href="/" class="btn btn-primary mt-auto">Ritorna alle origini</a>
                     </div>
-                @endforeach
+                </div>
+
 
             </div>
 

@@ -1,3 +1,42 @@
-body{
-    background-color: blue !important;
+body {
+    background-color: rgb(141, 141, 167) !important;
+    font-family: 'Taviraj', serif;
+
+}
+
+h2 {
+    color: #e3edf7;
+    text-shadow: 2px 2px 4px #000000;
+}
+p{
+    font-size: 1.2rem;
+}
+
+.box-shadow {
+    border-radius: 1%;
+    -webkit-box-shadow: 5px 5px 10px 0px #000000;
+    -moz-box-shadow: 5px 5px 10px 0px #000000;
+    -o-box-shadow: 5px 5px 10px 0px #000000;
+    box-shadow: 5px 5px 10px 0px #000000;
+}
+
+.card{
+    min-height: 100%;
+}
+
+
+.card-img-top {
+    padding: 1rem;
+    margin: auto;
+    width: 75%;
+    object-fit: contain;
+    aspect-ratio: 1/1;
+}
+
+.navbar-brand-logo {
+    background-image: url('/public/bear_icon.jpg');
+    background-repeat: no-repeat;
+    width: 80px;
+
+    z-index: 5;
 }

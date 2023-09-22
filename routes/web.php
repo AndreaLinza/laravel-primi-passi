@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $data = [
+
         "arguments" => [
             [
                 "id" => "1",
@@ -75,4 +76,117 @@ Route::get('/', function () {
 
 
     return view("home", $data);
+});
+
+
+Route::get('/D', function () {
+
+    $data = [
+        "intro" => "Gli orsi sono animali affascinanti e complessi, e la loro documentazione può coprire una
+        vasta gamma di argomenti, tra cui la loro biologia, comportamento, habitat, conservazione e molto altro.
+        Ecco un riassunto dei principali argomenti che potresti trovare nella documentazione sugli orsi:",
+
+        "category" => [
+            [
+                "title" => "1. Biologia e Classificazione:",
+                "desc1" => "-Specie di orsi: Ci sono diverse specie di orsi, tra cui l'orso bruno, l'orso polare, l'orso nero, l'orso grizzly e l'orso panda. Ogni specie ha caratteristiche biologiche uniche.",
+                "desc2" => "",
+                "desc3" => "",
+            
+            ],
+            [
+                "title" => "2. Habitat e Distribuzione:",
+                "desc1" => "- Gli orsi sono presenti in molte parti del mondo, dalle regioni artiche a quelle tropicali. La loro distribuzione geografica può variare notevolmente tra le specie.",
+                "desc2" => "",
+                "desc3" => "",
+            ],
+            [
+                "title" => "3. Comportamento:",
+                "desc1" => "- Comportamento alimentare: Gli orsi sono onnivori e la loro dieta può variare a seconda dell'habitat e della specie.",
+                "desc2" => "- Ibernazione: Molte specie di orsi vanno in letargo durante l'inverno per conservare energia.",
+                "desc3" => "- Comunicazione: Gli orsi utilizzano vari segnali vocali e comportamentali per comunicare tra loro.",
+
+            ],
+            [
+                "title" => "4. Riproduzione:",
+                "desc1" => "- Ciclo riproduttivo: Gli orsi hanno un ciclo riproduttivo che può variare tra le specie.",
+                "desc2" => "- Cura parentale: Alcune specie di orsi mostrano una notevole cura parentale nei confronti dei loro cuccioli.",
+                "desc3" => "",
+
+            ],
+            [
+                "title" => "5. Conservazione:",
+                "desc1" => "- Minacce: Gli orsi affrontano minacce come la perdita di habitat, la caccia illegale e il cambiamento climatico.",
+                "desc2" => "- Programmi di conservazione: Ci sono svariati programmi di conservazione dedicati alla protezione degli orsi in tutto il mondo.",
+                "desc3" => "",
+
+            ],
+            [
+                "title" => "6. Interazioni con gli Esseri Umani:",
+                "desc1" => "- Conflitti con gli esseri umani: Gli orsi possono occasionalmente entrare in conflitto con le comunità umane quando cercano cibo nelle vicinanze delle aree abitate.",
+                "desc2" => "- Turismo: L'osservazione degli orsi è una fonte importante di turismo in alcune regioni.",
+                "desc3" => "",
+
+            ],
+            [
+                "title" => "7. Ricerca scientifica:",
+                "desc1" => "- Gli orsi sono oggetto di numerosi studi scientifici per comprendere meglio la loro biologia, comportamento e interazioni con l'ambiente.",
+                "desc2" => "",
+                "desc3" => "",
+            ],
+            [
+                "title" => "8. Mitologia e Cultura:",
+                "desc1" => "- Gli orsi sono stati oggetto di miti, leggende e simbolismo in molte culture in tutto il mondo. Questi animali sono spesso associati a significati culturali e spirituali.",
+                "desc2" => "",
+                "desc3" => "",
+
+            ],
+        ],
+        "info" => "Per ulteriori informazioni sulla documentazione sugli orsi, puoi consultare libri, articoli scientifici, documentari naturalistici e risorse online fornite da organizzazioni di conservazione della fauna selvatica e istituzioni scientifiche. Assicurati di specificare la specie di orso o l'argomento specifico di tuo interesse per ottenere informazioni dettagliate."
+    ];
+
+    return view("documentation", $data);
+});
+
+Route::get('/1', function () {
+    $data = [
+        "htmlBear" => [
+
+            "name" => "HBML: HyperBear Markup Language",
+            "description" => "HTML è il linguaggio di markup per la creazione di pagine web. Utilizza tag per strutturare il contenuto. I browser web lo interpretano per visualizzare le pagine.",
+            "img" => "https://play-lh.googleusercontent.com/RslBy1o2NEBYUdRjQtUqLbN-ZM2hpks1mHPMiHMrpAuLqxeBPcFSAjo65nQHbTA53YYn=w240-h480-rw"
+
+
+        ]
+
+    ];
+    return view("hbmlLanguage", $data);
+});
+
+
+
+
+Route::get('/2', function () {
+    return view("documentation");
+});
+Route::get('/3', function () {
+    return view("documentation");
+});
+Route::get('/4', function () {
+    return view("documentation");
+});
+Route::get('/5', function () {
+    return view("documentation");
+});
+Route::get('/6', function () {
+    return view("documentation");
+});
+Route::get('/7', function () {
+    return view("documentation");
+});
+Route::get('/8', function () {
+    return view("documentation");
+});
+Route::get('/9', function () {
+    return view("documentation");
 });

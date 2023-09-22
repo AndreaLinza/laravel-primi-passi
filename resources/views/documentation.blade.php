@@ -59,25 +59,20 @@
 
 
     <main>
-        <div class="container">
+        <div class="container ">
+            <h2 class="text-center fw-bold display-2 pb-4">Documentazione</h2>
+            <div class="bg-white p-5 box-shadow">
 
-            <div class="row row-cols-3 g-5">
-                @foreach ($arguments as $singleArg)
-                    <div class="col">
-                        <div class="card box-shadow">
-                            <img src={{ $singleArg['img'] }} class="card-img-top" alt="...">
-                            <div class="card-body d-flex flex-column justify-content-between">
-                                <h3 class="card-title text-center">{{ $singleArg['name'] }}</h3>
-                                <p class="card-text"> {{ $singleArg['description'] }} </p>
-                                <a href={{ $singleArg['id'] }}
-                                    class="btn btn-outline-dark w-50 mx-auto py-2 my-3">Dettagli</a>
-                            </div>
-                        </div>
-                    </div>
-                @endforeach
-
+                <h3 class="mb-4">{{$intro}}</h3>
+                    
+                    @foreach ($category as $cat)
+                    <h4 class="py-4"> {{ $cat['title'] }} </h4>
+                    <p class="fs-5"> {{ $cat['desc1'] }} </p>
+                    <p class="fs-5"> {{ $cat['desc2'] }} </p>
+                    <p class="fs-5"> {{ $cat['desc3'] }} </p>
+                    @endforeach
+                                
             </div>
-
         </div>
     </main>
 
