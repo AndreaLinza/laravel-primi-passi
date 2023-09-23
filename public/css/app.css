@@ -1,7 +1,25 @@
 body {
     background-color: rgb(141, 141, 167) !important;
     font-family: 'Taviraj', serif;
+    
+}
+nav{
+    position:fixed !important;
+    z-index: 10;
+    top: 0;
+    width: 100%;
+    
+}
 
+.btn-center{
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+.navbar-brand-logo {
+    background-image: url('/public/bear_icon.jpg');
+    background-repeat: no-repeat;
+    width: 80px;
+    z-index: 5;
 }
 
 h2 {
@@ -10,6 +28,25 @@ h2 {
 }
 p{
     font-size: 1.2rem;
+}
+
+.tape-t{
+    transform: rotateZ(320deg);
+    width: 25%;
+    height: 20%;
+    position: absolute;
+    top: 0;
+    left: 25px;
+}
+.tape-b{
+    transform: rotateZ(320deg);
+    width: 25%;
+    height: 20%;
+    position: absolute;
+    bottom: 215px;
+    
+    right: 20px;
+    
 }
 
 .box-shadow {
@@ -22,21 +59,21 @@ p{
 
 .card{
     min-height: 100%;
+    
 }
+
+.card-br{
+    background-color: #dddad2;
+}
+
 
 
 .card-img-top {
+    margin-top: 2rem;
+    margin-left: 50%;
+    transform: translateX(-50%);
     padding: 1rem;
-    margin: auto;
     width: 75%;
     object-fit: contain;
     aspect-ratio: 1/1;
-}
-
-.navbar-brand-logo {
-    background-image: url('/public/bear_icon.jpg');
-    background-repeat: no-repeat;
-    width: 80px;
-
-    z-index: 5;
 }

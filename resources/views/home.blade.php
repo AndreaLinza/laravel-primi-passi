@@ -25,10 +25,10 @@
 
 <body>
 
-    <header class="mb-5">
+    <header>
         <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary py-3" data-bs-theme="dark">
             <div class="container">
-                <a class="navbar-brand" href="/"><img class="navbar-brand-logo" src="/bearIcon.jpg"
+                <a class="navbar-brand" href="/"><img class="navbar-brand-logo box-shadow" src="/bearIcon.jpg"
                         alt="logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -36,7 +36,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav fs-5 text-sm-center me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="/">Home</a>
                         </li>
@@ -59,16 +59,16 @@
 
 
     <main>
-        <div class="container">
+        <div class="container mt-5 pt-5">
 
-            <div class="row row-cols-3 g-5">
+            <div class="row mt-2 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 g-5">
                 @foreach ($arguments as $singleArg)
                     <div class="col">
                         <div class="card box-shadow">
                             <img src={{ $singleArg['img'] }} class="card-img-top" alt="...">
                             <div class="card-body d-flex flex-column justify-content-between">
-                                <h3 class="card-title text-center">{{ $singleArg['name'] }}</h3>
-                                <p class="card-text"> {{ $singleArg['description'] }} </p>
+                                <h3 class="card-title fw-bold text-center">{{ $singleArg['name'] }}</h3>
+                                <p class="card-text px-2"> {{ $singleArg['description'] }} </p>
                                 <a href={{ $singleArg['id'] }}
                                     class="btn btn-outline-dark w-50 mx-auto py-2 my-3">Dettagli</a>
                             </div>
@@ -81,6 +81,7 @@
         </div>
     </main>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 
 </html>

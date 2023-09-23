@@ -28,7 +28,7 @@
     <header class="mb-5">
         <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary py-3" data-bs-theme="dark">
             <div class="container">
-                <a class="navbar-brand" href="/"><img class="navbar-brand-logo" src="/bearIcon.jpg"
+                <a class="navbar-brand" href="/"><img class="navbar-brand-logo box-shadow" src="/bearIcon.jpg"
                         alt="logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -36,7 +36,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav fs-5 me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="/">Home</a>
                         </li>
@@ -59,21 +59,20 @@
 
 
     <main>
-        <div class="container">
-
-            <div class="row row-cols-3 g-3 justify-content-center">
-                <div class="card box-shadow">
-                    <img src={{ $htmlBear['img'] }} class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h4 class="card-title">{{ $htmlBear['name'] }}</h4>
-                        <p class="card-text"> {{ $htmlBear['description'] }} </p>
-                        <a href="/" class="btn btn-primary mt-auto">Ritorna alle origini</a>
+        <div class="container mt-5 pt-5">
+            <div class="row mt-5 justify-content-center">
+                <div class="col-8">
+                    <div class="card card-br position-relative box-shadow">
+                        <img class="clip" src="/clip.png" alt="">
+                        <img src={{ $bearStrap['img'] }} class="card-img-top box-shadow my-5" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title">{{ $bearStrap['name'] }}</h4>
+                            <p class="card-text"> {{ $bearStrap['description'] }} </p>
+                            <a href="/" class="btn btn-outline-dark btn-center">Ritorna alle origini</a>
+                        </div>
                     </div>
                 </div>
-
-
             </div>
-
         </div>
     </main>
 

@@ -15,9 +15,9 @@
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Taviraj:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Taviraj:wght@500;600&display=swap" rel="stylesheet">
     {{-- CSS Style --}}
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 
@@ -38,10 +38,10 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav fs-5 me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link " aria-current="page" href="/">Home</a>
+                            <a class="nav-link active" aria-current="page" href="/">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="/D">Docs</a>
+                            <a class="nav-link" href="/D">Docs</a>
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
@@ -60,18 +60,18 @@
 
     <main>
         <div class="container mt-5 pt-5">
-            <h2 class="text-center mt-5 fw-bold display-2 pb-4">Documentazione</h2>
-            <div class="bg-white p-5 box-shadow">
-
-                <h3 class="mb-4">{{$intro}}</h3>
-                    
-                    @foreach ($category as $cat)
-                    <a href="/{{$cat['ID']}}" class="fs-4 text-decoration-none text-dark py-4"> {{ $cat['title'] }} </a>
-                    <p class="fs-5"> {{ $cat['desc1'] }} </p>
-                    <p class="fs-5"> {{ $cat['desc2'] }} </p>
-                    <p class="fs-5"> {{ $cat['desc3'] }} </p>
-                    @endforeach
-                                
+            <div class="row mt-5 justify-content-center">
+                <div class="col-md-8 col-sm-12">
+                    <div class="card card-br position-relative box-shadow">
+                        <img class="clip" src="/clip.png" alt="">
+                        <img src={{ $hBearMl['img'] }} class="card-img-top box-shadow my-5" alt="...">
+                        <div class="card-body px-5 mb-3">
+                            <h4 class="card-title fw-bold mb-4">{{ $hBearMl['name'] }}</h4>
+                            <p class="card-text"> {{ $hBearMl['description'] }} </p>
+                            <a href="/" class="btn btn-outline-dark btn-center mt-2">Ritorna alle origini</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
