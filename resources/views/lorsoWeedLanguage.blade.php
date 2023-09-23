@@ -66,11 +66,11 @@
                         <div class="position-relative">
                             <img class="tape-t" src="/tape.png" alt="tape-t">
                             <img class="tape-b" src="/tape.png" alt="tape-b">
-                            <img src={{ $hBearMl['img'] }} class="card-img-top object-fit-cover box-shadow my-5" alt="...">
+                            <img src={{ $lorsoWeed['img'] }} class="card-img-top object-fit-cover box-shadow my-5" alt="...">
                         </div>
                         <div class="card-body px-5 mb-3">
-                            <h4 class="card-title fw-bold mb-4">{{ $hBearMl['name'] }}</h4>
-                            <p class="card-text"> {{ $hBearMl['description'] }} </p>
+                            <h4 class="card-title fw-bold mb-4">{{ $lorsoWeed['name'] }}</h4>
+                            <p class="card-text"> {{ $lorsoWeed['description'] }} </p>
                             <a href="/" class="btn btn-outline-dark btn-center mt-2">Ritorna alle origini</a>
                         </div>
                     </div>

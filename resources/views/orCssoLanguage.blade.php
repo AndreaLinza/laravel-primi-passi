@@ -62,10 +62,12 @@
         <div class="container mt-5 pt-5">
             <div class="row mt-5 justify-content-center">
                 <div class="col-md-8 col-sm-12">
-                    <div class="card card-br position-relative box-shadow">
-                        <img class="tape-t" src="/tape3.png" alt="">
-                        <img class="tape-b" src="/tape3.png" alt="">
-                        <img src={{ $orCSSo['img'] }} class="card-img-top box-shadow my-5" alt="...">
+                    <div class="card card-br box-shadow">
+                        <div class="position-relative">
+                            <img class="tape-t" src="/tape.png" alt="tape-t">
+                            <img class="tape-b" src="/tape.png" alt="tape-b">
+                            <img src={{ $orCSSo['img'] }} class="card-img-top object-fit-cover box-shadow my-5" alt="...">
+                        </div>
                         <div class="card-body px-5 mb-3">
                             <h4 class="card-title fw-bold mb-4">{{ $orCSSo['name'] }}</h4>
                             <p class="card-text"> {{ $orCSSo['description'] }} </p>

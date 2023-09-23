@@ -15,9 +15,9 @@
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Taviraj:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Taviraj:wght@500;600&display=swap" rel="stylesheet">
     {{-- CSS Style --}}
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 
@@ -62,11 +62,14 @@
         <div class="container mt-5 pt-5">
             <div class="row mt-5 justify-content-center">
                 <div class="col-8">
-                    <div class="card card-br position-relative box-shadow">
-                        <img class="clip" src="/clip.png" alt="">
-                        <img src={{ $orSASS['img'] }} class="card-img-top box-shadow my-5" alt="...">
-                        <div class="card-body">
-                            <h4 class="card-title">{{ $orSASS['name'] }}</h4>
+                    <div class="card card-br box-shadow">
+                        <div class="position-relative">
+                            <img class="tape-t" src="/tape.png" alt="tape-t">
+                            <img class="tape-b" src="/tape.png" alt="tape-b">
+                            <img src={{ $orSASS['img'] }} class="card-img-top box-shadow my-5" alt="...">
+                        </div>
+                        <div class="card-body px-5 mb-3">
+                            <h4 class="card-title fw-bold mb-4">{{ $orSASS['name'] }}</h4>
                             <p class="card-text"> {{ $orSASS['description'] }} </p>
                             <a href="/" class="btn btn-outline-dark btn-center">Ritorna alle origini</a>
                         </div>

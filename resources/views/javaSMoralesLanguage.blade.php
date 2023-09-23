@@ -62,11 +62,14 @@
         <div class="container mt-5 pt-5">
             <div class="row mt-5 justify-content-center">
                 <div class="col-8">
-                    <div class="card card-br position-relative box-shadow">
-                        <img class="clip" src="/clip.png" alt="">
-                        <img src={{ $javaSMorales['img'] }} class="card-img-top box-shadow my-5" alt="...">
-                        <div class="card-body">
-                            <h4 class="card-title">{{ $javaSMorales['name'] }}</h4>
+                    <div class="card card-br box-shadow">
+                        <div class="position-relative">
+                            <img class="tape-t" src="/tape.png" alt="tape-t">
+                            <img class="tape-b" src="/tape.png" alt="tape-b">
+                            <img src={{ $javaSMorales['img'] }} class="card-img-top  object-fit-cover box-shadow my-5" alt="...">
+                        </div>
+                        <div class="card-body px-5 mb-3">
+                            <h4 class="card-title fw-bold mb-4">{{ $javaSMorales['name'] }}</h4>
                             <p class="card-text"> {{ $javaSMorales['description'] }} </p>
                             <a href="/" class="btn btn-outline-dark btn-center">Ritorna alle origini</a>
                         </div>

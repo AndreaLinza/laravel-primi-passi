@@ -201,7 +201,7 @@ Route::get('/3', function () {
             "id" => "3",
             "name" => "Bootstrap",
             "description" => "Bootstrap: Framework front-end per lo sviluppo web rapido e responsive.",
-            "img" => "https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png"
+            "img" => "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Grolar.JPG/640px-Grolar.JPG"
         ]
     ];
     return view("bearStrapLanguage", $data);
@@ -213,7 +213,7 @@ Route::get('/4', function () {
             "id" => "4",
             "name" => "SASS",
             "description" => "Sass: Linguaggio di estensione CSS per semplificare e migliorare la scrittura di fogli di stile.",
-            "img" => "https://cdn.mos.cms.futurecdn.net/TTgVoW3Q5WPkMBHi2VD59Q-970-80.jpg.webp"
+            "img" => "https://www.ilmeteo.it/portale/files/giornale/orso-russo-021222.jpg"
         ]
     ];
     return view("orSASSLanguage", $data);
@@ -225,7 +225,7 @@ Route::get('/5', function () {
             "id" => "5",
             "name" => "Javascript",
             "description" => "JavaScript: Linguaggio di programmazione web per rendere le pagine interattive e dinamiche nei browser.",
-            "img" => "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/512px-Unofficial_JavaScript_logo_2.svg.png"
+            "img" => "https://assetsio.reedpopcdn.com/miles-morales-header.jpg?width=1200&height=900&fit=crop&quality=100&format=png&enable=upscale&auto=webp"
         ]
     ];
     return view("javaSMoralesLanguage", $data);
@@ -233,11 +233,11 @@ Route::get('/5', function () {
 Route::get('/6', function () {
     $data = [
 
-        "VueMais" => [
+        "vueMais" => [
             "id" => "6",
             "name" => "Vue.js",
             "description" => "Vue.js: Libreria JavaScript per la creazione di interfacce utente reattive e componentizzate nelle applicazioni web.",
-            "img" => "https://i2.wp.com/www.onasus.com/wp-content/uploads/2018/04/vuejs-javascript-framework.jpg?fit=544%2C550&ssl=1"
+            "img" => "https://images.twinkl.co.uk/tw1n/image/private/t_630/u/ux/miles-no-mask_ver_1.png"
         ]
     ];
     return view("vueMaisLanguage", $data);
@@ -245,36 +245,36 @@ Route::get('/6', function () {
 Route::get('/7', function () {
     $data = [
 
-        "orCSSo" => [
+        "PearHPorales" => [
             "id" => "7",
             "name" => "PHP",
             "description" => "PHP: Linguaggio di scripting ampiamente utilizzato per lo sviluppo web server-side.",
-            "img" => "https://www.html.it/app/uploads/2014/04/php.png"
+            "img" => "/OrsoMorales.png"
         ]
     ];
-    return view("orCssoLanguage", $data);
+    return view("pearHPoralesLanguage", $data);
 });
 Route::get('/8', function () {
     $data = [
 
-        "orCSSo" => [
+        "maiSQorales" => [
             "id" => "8",
             "name" => "MySql",
             "description" => "PHP: Linguaggio di scripting ampiamente utilizzato per lo sviluppo web server-side.",
-            "img" => "https://www.elearningworld.org/wp-content/uploads/2019/04/MySQL.svg.png"
+            "img" => "https://i.kym-cdn.com/entries/icons/facebook/000/045/324/cover19.jpg"
         ]
     ];
-    return view("orCssoLanguage", $data);
+    return view("maiSQoralesLanguage", $data);
 });
 Route::get('/9', function () {
     $data = [
 
-        "orCSSo" => [
+        "lorsoWeed" => [
             "id" => "9",
             "name" => "Laravel",
             "description" => "Laravel: Framework PHP open-source per lo sviluppo di applicazioni web scalabili e robuste con un'elevata produttività.",
-            "img" => "https://customcodefactory.com/wp-content/uploads/2019/11/Laravel-logo-300x300.jpg"
+            "img" => "/TheOrso.jpg"
         ]
     ];
-    return view("orCssoLanguage", $data);
+    return view("lorsoWeedLanguage", $data);
 });
