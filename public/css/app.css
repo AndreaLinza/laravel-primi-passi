@@ -22,7 +22,7 @@ nav{
     z-index: 5;
 }
 
-h2 {
+h1, h2 {
     color: #e3edf7;
     text-shadow: 2px 2px 4px #000000;
 }

@@ -15,9 +15,9 @@
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Taviraj:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Taviraj:wght@500;600&display=swap" rel="stylesheet">
     {{-- CSS Style --}}
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 
@@ -41,7 +41,10 @@
                             <a class="nav-link " aria-current="page" href="/">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="/D">Docs</a>
+                            <a class="nav-link active" href="/Doc">Docs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Team">Our Teams</a>
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
@@ -63,18 +66,30 @@
             <h2 class="text-center mt-5 fw-bold display-2 pb-4">Documentazione</h2>
             <div class="bg-white p-5 box-shadow">
 
-                <h3 class="mb-4">{{$intro}}</h3>
-                    
-                    @foreach ($category as $cat)
-                    <a href="/{{$cat['ID']}}" class="fs-4 text-decoration-none text-dark py-4"> {{ $cat['title'] }} </a>
-                    <p class="fs-5"> {{ $cat['desc1'] }} </p>
-                    <p class="fs-5"> {{ $cat['desc2'] }} </p>
-                    <p class="fs-5"> {{ $cat['desc3'] }} </p>
-                    @endforeach
-                                
+                <h4 class="mb-5">{{ $intro }}</h4>
+
+                @foreach ($category as $cat)
+                    <div class="py-2">
+                        <a href="/{{ $cat['ID'] }}" class="fs-4 text-decoration-none text-dark"> {{ $cat['title'] }}
+                        </a>
+                        <p class="fs-5"> {{ $cat['desc1'] }} </p>
+                        <p class="fs-5"> {{ $cat['desc2'] }} </p>
+                        <p class="fs-5"> {{ $cat['desc3'] }} </p>
+                    </div>
+                @endforeach
+
+                <small> {{ $info }} </small>
+
             </div>
         </div>
     </main>
+    <footer class="bg-dark mt-5">
+        <div class="container">
+            <div class="py-5">
+                <p class="m-0 text-white">Contatti: +999 99999</p>
+            </div>
+        </div>
+    </footer>
 
 </body>
 

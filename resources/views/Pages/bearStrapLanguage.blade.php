@@ -41,7 +41,10 @@
                             <a class="nav-link active" aria-current="page" href="/">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/D">Docs</a>
+                            <a class="nav-link" href="/Doc">Docs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Team">Our Teams</a>
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
@@ -61,23 +64,36 @@
     <main>
         <div class="container mt-5 pt-5">
             <div class="row mt-5 justify-content-center">
-                <div class="col-md-8 col-sm-12">
+                <div class="col-8">
                     <div class="card card-br box-shadow">
                         <div class="position-relative">
                             <img class="tape-t" src="/tape.png" alt="tape-t">
                             <img class="tape-b" src="/tape.png" alt="tape-b">
-                            <img src={{ $hBearMl['img'] }} class="card-img-top object-fit-cover box-shadow my-5" alt="...">
+                            <img src={{ $bearStrap['img'] }} class="card-img-top object-fit-cover box-shadow my-5"
+                                alt="...">
                         </div>
                         <div class="card-body px-5 mb-3">
-                            <h4 class="card-title fw-bold mb-4">{{ $hBearMl['name'] }}</h4>
-                            <p class="card-text"> {{ $hBearMl['description'] }} </p>
-                            <a href="/" class="btn btn-outline-dark btn-center mt-2">Ritorna alle origini</a>
+                            <h4 class="card-title  fw-bold mb-4">{{ $bearStrap['name'] }}</h4>
+                            <p class="card-text"> {{ $bearStrap['description'] }} </p>
+                            <p>
+                                Articolo di:
+                                <a href="/Team" class="text-secondary"> {{ $bearStrap['author'] }} </a>
+                            </p>
+                            <a href="/" class="btn btn-outline-dark btn-center">Ritorna alle origini</a>
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
+    <footer class="bg-dark mt-5">
+        <div class="container">
+            <div class="py-5">
+                <p class="m-0 text-white">Contatti: +999 99999</p>
+            </div>
+        </div>
+    </footer>
 
 </body>
 

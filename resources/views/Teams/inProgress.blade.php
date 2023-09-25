@@ -25,7 +25,7 @@
 
 <body>
 
-    <header class="mb-5">
+    <header>
         <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary py-3" data-bs-theme="dark">
             <div class="container">
                 <a class="navbar-brand" href="/"><img class="navbar-brand-logo box-shadow" src="/bearIcon.jpg"
@@ -36,12 +36,15 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav fs-5 me-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav fs-5 text-sm-center me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="/">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/D">Docs</a>
+                            <a class="nav-link" href="/Doc">Docs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Team">Our Teams</a>
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
@@ -60,25 +63,34 @@
 
     <main>
         <div class="container mt-5 pt-5">
-            <div class="row mt-5 justify-content-center">
-                <div class="col-8">
-                    <div class="card card-br box-shadow">
-                        <div class="position-relative">
-                            <img class="tape-t" src="/tape.png" alt="tape-t">
-                            <img class="tape-b" src="/tape.png" alt="tape-b">
-                            <img src={{ $vueMais['img'] }} class="card-img-top box-shadow my-5" alt="...">
-                        </div>
-                        <div class="card-body px-5 mb-3">
-                            <h4 class="card-title fw-bold mb-4">{{ $vueMais['name'] }}</h4>
-                            <p class="card-text"> {{ $vueMais['description'] }} </p>
-                            <a href="/" class="btn btn-outline-dark btn-center">Ritorna alle origini</a>
-                        </div>
+
+            <h1 class="text-center display-3 mt-5 fw-bold">ThePoveroCristo that made that mess</h1>
+            <div class="mt-2">
+                <div class="card mx-auto w-50 box-shadow">
+                    <img src={{ $creator['img'] }} class="card-img-top rounded-circle" alt="...">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <h3 class="card-title fw-bold text-center">{{ $creator['name'] }}</h3>
+                        <p class="card-text text-center px-2"> {{ $creator['description'] }} </p>
+                        <a href="/" class="btn btn-outline-dark w-50 mx-auto py-2 my-3">Ritorna a Casa</a>
                     </div>
                 </div>
+
             </div>
+
         </div>
     </main>
 
+    <footer class="bg-dark mt-5">
+        <div class="container">
+            <div class="py-5">
+                <p class="m-0 text-white">Contatti: +999 99999</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>

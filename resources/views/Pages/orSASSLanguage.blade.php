@@ -41,7 +41,10 @@
                             <a class="nav-link active" aria-current="page" href="/">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/D">Docs</a>
+                            <a class="nav-link" href="/Doc">Docs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Team">Our Teams</a>
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
@@ -66,11 +69,15 @@
                         <div class="position-relative">
                             <img class="tape-t" src="/tape.png" alt="tape-t">
                             <img class="tape-b" src="/tape.png" alt="tape-b">
-                            <img src={{ $bearStrap['img'] }} class="card-img-top object-fit-cover box-shadow my-5" alt="...">
+                            <img src={{ $orSASS['img'] }} class="card-img-top box-shadow my-5" alt="...">
                         </div>
                         <div class="card-body px-5 mb-3">
-                            <h4 class="card-title  fw-bold mb-4">{{ $bearStrap['name'] }}</h4>
-                            <p class="card-text"> {{ $bearStrap['description'] }} </p>
+                            <h4 class="card-title fw-bold mb-4">{{ $orSASS['name'] }}</h4>
+                            <p class="card-text"> {{ $orSASS['description'] }} </p>
+                            <p>
+                                Articolo di:
+                                <a href="/Team" class="text-secondary"> {{ $orSASS['author'] }} </a>
+                            </p>
                             <a href="/" class="btn btn-outline-dark btn-center">Ritorna alle origini</a>
                         </div>
                     </div>
@@ -78,6 +85,13 @@
             </div>
         </div>
     </main>
+    <footer class="bg-dark mt-5">
+        <div class="container">
+            <div class="py-5">
+                <p class="m-0 text-white">Contatti: +999 99999</p>
+            </div>
+        </div>
+    </footer>
 
 </body>
 
